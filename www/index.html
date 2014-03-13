@@ -1,166 +1,309 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/modernizr.js"></script>
-  </head>
-  <body>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+<!DOCTYPE html> 
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]--> 
+<html class="no-js" lang="en" > 
+
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Buy Marine!</title> 
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. --> 
+  <link rel="stylesheet" href="css/bethel-style.css" />
+  <link rel="stylesheet" href="css/normalize.css"> 
+  <link rel="stylesheet" href="css/foundation.css"> 
+
+  <script src="js/vendor/modernizr.js"></script> 
+</head> 
+
+<body> 
+<!-- This begins the main content section of the site. -->
+
+<div class="contain-to-grid fixed">
+  <nav class="top-bar" data-topbar> 
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><img src="img/Buy_Marine_Logo.png" border="0" alt="Buy-Marine.com - Wholesale Marine Electronics" /></a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+    <li class="has-form"> 
+    <a href="#" class="button" data-dropdown="drop2">Dealer Login</a>
+      <div id="drop2" data-dropdown-content class="f-dropdown content">
+        <form data-abide> 
+          <div class="name-field"> 
+            <label>Email <small>required</small></label> 
+            <input type="email" required> 
+            <small class="error">An email address is required.</small> 
+          </div> 
+          <div class="email-field"> 
+            <label>Password <small>required</small></label> 
+            <input type="password" required> 
+            <small class="error">The password did not match.</small> 
+          </div> 
+        <button class="button [tiny]" type="submit">Submit</button> </form>
+<!--          <div>
+            <a href="#">Lost Password?</a>
+          </div> -->
       </div>
+    </li>
+
+<!-- <a href="#" class="button">Dealer Login</a> </li> -->
+
+      <li class="has-dropdown">
+        <a href="#">MAIN MENU</a>
+        <ul class="dropdown">
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Rebates & Coupons</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Understanding MAP</a></li>
+          <li><a href="#">International Sales</a></li>
+          <li><a href="#">About Buy-Marine.com</a></li>
+          <li><a href="#">Marine Electronics Links</a></li>
+          <li><a href="#">Privacy Notice</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="left">
+    <li class="has-form"> 
+      <div class="row collapse"> 
+        <div class="large-8 small-9 columns"> 
+          <input type="text" placeholder="Product Name"> 
+        </div> 
+        <div class="large-4 small-3 columns"> 
+          <a href="#" class="alert button expand">Search</a> 
+        </div> 
+      </div> 
+    </li>
+    </ul>
+  </section>  
+  </nav> 
+</div>
+
+<!-- Old Header and Nav 
+
+  <div class="row">
+      <div class="large-5 columns">
+        <h1><img src="img/Buy_Marine_Logo.png" /></h1>
+      </div>
+    <div class="large-7 columns">
+      <ul class="right button-group">
+      <li><a href="#" class="button">Link 1</a></li>
+      <li><a href="#" class="button">Link 2</a></li>
+      <li><a href="#" class="button">Link 3</a></li>
+      <li><a href="#" class="button">Link 4</a></li>
+      </ul>
+    </div>
+  </div>
+  
+ End Old Header and Nav -->
+ 
+<!-- First Band (Slider) -->
+ 
+  <div class="row">
+    <div class="large-12 columns shaded">
+      <div id="slider">
+        <ul class="example-orbit" data-orbit
+            data-options="animation:slide;
+                  animation_speed:1000;
+                  pause_on_hover:true;
+                  resume_on_mouseout: true;
+                  animation_speed:500;
+                  navigation_arrows:true;
+                  bullets:false;"> 
+          <li> 
+            <img src="img/BUY-BETHEL.png" alt="slide 1" />
+          </li> 
+          <li> 
+            <img src="img/GARMIN-RADOMES.png" alt="slide 2" />
+          </li> 
+          <li> 
+            <img src="img/Garmin_Price_Reduction.png" alt="slide 3" />
+          </li> 
+        </ul>
+      </div>
+    
+<!-- Main Navigation Bar -->
+
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul>
+          <li class="has-dropdown">
+            <a href="#">GPS, Weather & Radar</a>
+            <ul class="dropdown">
+              <li><a href="#">Network Displays</a></li>
+              <li><a href="#">Network Packages</a></li>
+              <li><a href="#">GPS & Sonar Combos</a></li>
+              <li><a href="#">Chartplotters</a></li>
+              <li><a href="#">Network Sensors</a></li>
+              <li><a href="#">Weather Instruments</a></li>
+              <li><a href="#">Wind Instruments</a></li>
+              <li><a href="#">Radar Scanners & Antennas</a></li>
+              <li><a href="#">Electronic Charts/Cartography</a></li>
+              <li><a href="#">GPS/Network Accessories</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Fishfinders & Sonar</a>
+            <ul class="dropdown">
+              <li><a href="#">Fishfinder & GPS Combos</a></li>
+              <li><a href="#">Dedictated Fishfinders</a></li>
+              <li><a href="#">Transducers & Sounders</a></li>
+              <li><a href="#">Fishfinder Accessories</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Communications</a>
+            <ul class="dropdown">
+              <li><a href="#">Antennas</a></li>
+              <li><a href="#">Handheld VHF Radios</a></li>
+              <li><a href="#">Fixed Mount VHF Radios</a></li>
+              <li><a href="#">Satellite Communications</a></li>
+              <li><a href="#">Handheld Satellite Phones</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Instruments</a>
+            <ul class="dropdown">
+              <li><a href="#">Autopilots</a></li>
+              <li><a href="#">Compass</a></li>
+              <li><a href="#">Depth Instruments</a></li>
+              <li><a href="#">Knotmeter Instruments</a></li>
+              <li><a href="#">Multifunction Instruments</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Audio/Video</a>
+            <ul class="dropdown">
+              <li><a href="#">Stereo Packages</a></li>
+              <li><a href="#">Stereo Head Units</a></li>
+              <li><a href="#">Marine Speakers</a></li>
+              <li><a href="#">Audio Amplifiers</a></li>
+              <li><a href="#">Video Products</a></li>
+              <li><a href="#">Satellite Radio</a></li>
+              <li><a href="#">Satellite TV</a></li>
+              <li><a href="#">Cameras</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Safety & Lighting</a>
+            <ul class="dropdown">
+              <li><a href="#">AIS Systems</a></li>
+              <li><a href="#">EPIRBs and accessories</a></li>
+              <li><a href="#">Searchlights</a></li>
+              <li><a href="#">Rescue Lights</a></li>
+              <li><a href="#">Marine LED Lighting</a></li>
+              <li><a href="#">Video Products</a></li>
+              <li><a href="#">Surveillance & Night Vision</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Misc</a>
+            <ul class="dropdown">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Battery & Power</a></li>
+              <li><a href="#">Cables</a></li>
+              <li><a href="#">Connectors</a></li>
+              <li><a href="#">Discontinued</a></li>
+              <li><a href="#">Mounts</a></li>
+              <li><a href="#">Parts</a></li>
+              <li><a href="#">Software</a></li>
+              <li><a href="#">Wireless</a></li>
+            </ul>
+          </li>           
+        </ul>
+        </section>
+      </nav> 
+    </div>
+  </div>
+
+<!-- End Main Navigation Bar -->
+  
+<!-- Three-up Content Blocks -->
+ 
+  <div class="row">
+    <div class="front-box large-4 columns shaded">
+      <img src="img/speed-dial.png" />
+      <h4>Always the Best Price!</h4>
+      <p>As a major distributor for manufacturers such as Garmin, Raymarine, Furuno, Navico (Simrad, Lowrance and B&G), Icom, Fusion, JL Audio, Seatel, KVH, Intellian, Shakespeare and Digital Antenna for over 42 years, we're able to negotiate some of the best pricing in the industry and pass that savings on to you.</p>
     </div>
     
-    <div class="row">
-      <div class="large-12 columns">
-      	<div class="panel">
-	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	        <p>Once you've exhausted the fun in this document, you should check out:</p>
-	        <div class="row">
-	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-	    	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-	        	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
-					</div>
-      	</div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
+    <div class="front-box large-4 columns shaded">
+      <img src="img/compass.png" />
+      <h4>Rely on Us for Great Advice.</h4>
+      <p>BUY-MARINE.com is staffed with certified and factory-trained technicians that are highly experienced. They can provide you with first-hand information when making purchasing decisions. You don't get this type of one-to-one consultation with most Internet sites, and you don't get it in the big box stores either.</p>
     </div>
     
-    <script src="js/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+    <div class="front-box large-4 columns shaded">
+      <img src="img/direction-dial.png" />
+      <h4>$9.99 U.S. Shipping!</h4>
+      <p>BUY-MARINE.com maintains a large inventory and can often guarantee shipments of products on the same day the order is placed. For Florida customers, this means UPS Ground typically arrives the next day. For all online purchases, BUY-MARINE.com provides low-cost, flat-rate shipping for orders of any size.</p>
+    </div>
+  
+    </div>
+    
+<!-- Call to Action Panel -->
+<div class="row">
+    <div class="large-12 columns shaded">
+    
+      <div class="panel">
+        <h4>Join the Buy-Marine.com e-mail newsletter!</h4>
+            
+        <div class="row">
+          <div class="large-7 columns">
+            <p>We send our subscribers quality information on:</p>
+              <ul>
+                <li>Manufacturer News</li>
+                <li>Customer Rebates</li>
+                <li>Product Introductions</li>
+                <li>Product Specials</li>
+              </ul>
+            <p>We respect your privacy. Buy-Marine.com promises to never reveal, list or sell your e-mail address. And we promise NO SPAM. You can change your subscription rules or unsubscribe at any time.</p>
+          </div>
+          <div class="large-5 columns">
+            <script type="text/javascript" src="http://app.getresponse.com/view_webform.js?wid=1152602&u=SiAO"></script>
+            <!--<a href="#" class="radius button right">Contact Us</a>-->
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+  <!-- Footer -->
+  
+  <footer class="row">
+    <div class="large-12 columns footer-panel callout panel ">
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+     
+
+  <script src="js/vendor/jquery.js"></script> 
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="js/jquery.color.min.js"></script>
+  <script src="js/bethel.js"></script>
+  <script> 
+    $(document).foundation(); 
+  </script> 
+</body> 
 </html>
